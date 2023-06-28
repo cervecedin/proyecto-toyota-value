@@ -1,4 +1,5 @@
 import React from 'react';
+import "./App.css";
 import {
   MDBBtn,
   MDBContainer,
@@ -18,27 +19,26 @@ function App() {
           <div className="d-flex flex-column ms-5">
 
             <div className="text-center">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
-                style={{width: '185px'}} alt="logo" />
-              <h4 className="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
+              <img src="../public/logo.png"
+                style={{width: '385px', alignItems: 'center'}} alt="logo" />
             </div>
 
-            <p>Please login to your account</p>
+            <p style={{textAlign:'center', marginBottom:'15px'}}>Por favor complete los campos</p>
 
 
-            <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email'/>
-            <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password'/>
+            <MDBInput wrapperClass='mb-4' placeholder='Email address' id='form1' type='email' required style={{textAlign:'center', border:'1px solid black', marginBlock:'5px', marginLeft:'45%'}}/>
+            <MDBInput wrapperClass='mb-4' placeholder='Password' id='form2' type='password' required style={{textAlign:'center', border:'1px solid black', marginBlock:'5px', marginLeft:'45%'}}/>
 
 
             <div className="text-center pt-1 mb-5 pb-1">
-              <MDBBtn className="mb-4 w-100 gradient-custom-2">Sign in</MDBBtn>
-              <a className="text-muted" href="#!">Forgot password?</a>
-            </div>
+              <MDBBtn className="gradient-custom-2">Sign in</MDBBtn><br></br><br></br>
+              <a className="text-muted" href="#!" style={{color:'#5d5d61', marginTop:'47px'}}>¿Has olvidado tu contraseña?</a>
+            </div><br></br>
 
-            <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
-              <p className="mb-0">Don't have an account?</p>
-              <MDBBtn outline className='mx-2' color='danger'>
-                Danger
+            <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4" style={{textAlign:'center'}}>
+              <p className="mb-0">¿No tienes una cuenta?</p><br></br>
+              <MDBBtn outline className='mx-2' color='danger' >
+                CREAR
               </MDBBtn>
             </div>
 
@@ -49,7 +49,7 @@ function App() {
         <MDBCol col='6' className="mb-5">
           <div className="d-flex flex-column  justify-content-center gradient-custom-2 h-100 mb-4">
 
-            <div className="text-white px-3 py-4 p-md-5 mx-md-4">
+            <div className="text-wel">
               <h4 class="mb-4">We are more than just a company</h4>
               <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
